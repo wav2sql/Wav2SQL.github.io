@@ -3,5 +3,5 @@ layout: default
 markdown: kramdown
 kramdown:
   toc_levels: 1..2
-title: "SingGAN: Generative Adversarial NetWork For High-Fidelity Singing Voice Generation"
+title: "Wav2SQL: Direct Generalizable Speech-To-SQL Parsing"
 

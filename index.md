@@ -19,17 +19,18 @@ Audio samples are available at <a href="https://Wav2SQL.github.io/"><i>https://W
 <br>
 
 <table>
-        <!-- <tr>
-            <th></th>
-            <th colspan="2">Ground truth</th>
-            <th colspan="3">Predictions</th>
-        </tr> -->
         <tr>
+            <th></th>
+            <th colspan="2">Spoken question</th>
+            <th colspan="2">Text question</th>
+            <th>Target SQL</th>
+        </tr>
+        <!-- <tr>
             <th></th>
             <th>Spoken question</th>
             <th>Text question</th>
             <th>Target SQL</th>
-        </tr>
+        </tr> -->
         <!-- <tr>
             <th colspan="6" style="text-align:left">Male Sample 1: </th>
         </tr> -->
@@ -42,7 +43,7 @@ Audio samples are available at <a href="https://Wav2SQL.github.io/"><i>https://W
                 <td>What are the names of projects that require more than 300 hours, and how many scientists are assigned to each?</td>
            </th>
            <th>
-                <td>SELECT count(*) ,  T1.name FROM projects AS T1 JOIN assignedto AS T2 ON T1.code  =  T2.project WHERE T1.hours  >  300 GROUP BY T1.name</td>
+                <td>SELECT count(*), T1.name FROM projects AS T1 JOIN assignedto AS T2 ON T1.code = T2.project WHERE T1.hours > 300 GROUP BY T1.name</td>
            </th>
         </tr>
         <tr>
@@ -54,7 +55,7 @@ Audio samples are available at <a href="https://Wav2SQL.github.io/"><i>https://W
                 <td>Find the number of projects which each scientist is working on and scientist's name.</td>
            </th>
            <th>
-                <td>SELECT count(*) ,  T1.name FROM scientists AS T1 JOIN assignedto AS T2 ON T1.ssn  =  T2.scientist GROUP BY T1.name</td>
+                <td>SELECT count(*), T1.name FROM scientists AS T1 JOIN assignedto AS T2 ON T1.ssn = T2.scientist GROUP BY T1.name</td>
            </th>
         </tr>
         <!-- <tr>
@@ -100,8 +101,8 @@ Audio samples are available at <a href="https://Wav2SQL.github.io/"><i>https://W
         </tr> -->
         <tr>
             <th></th>
-            <th>Spoken question</th>
-            <th>Text question</th>
+            <th colspan="2">Spoken question</th>
+            <th colspan="2">Text question</th>
             <th>Target SQL</th>
         </tr>
         <!-- <tr>
@@ -175,8 +176,8 @@ Audio samples are available at <a href="https://Wav2SQL.github.io/"><i>https://W
         </tr> -->
         <tr>
             <th></th>
-            <th>Spoken question</th>
-            <th>Text question</th>
+            <th colspan="2">Spoken question</th>
+            <th colspan="2">Text question</th>
             <th>Target SQL</th>
         </tr>
         <!-- <tr>
@@ -249,8 +250,8 @@ Audio samples are available at <a href="https://Wav2SQL.github.io/"><i>https://W
         </tr> -->
         <tr>
             <th></th>
-            <th>Spoken question</th>
-            <th>Text question</th>
+            <th colspan="2">Spoken question</th>
+            <th colspan="2">Text question</th>
             <th>Target SQL</th>
         </tr>
         <!-- <tr>
@@ -323,8 +324,8 @@ Audio samples are available at <a href="https://Wav2SQL.github.io/"><i>https://W
         </tr> -->
         <tr>
             <th></th>
-            <th>Spoken question</th>
-            <th>Text question</th>
+            <th colspan="2">Spoken question</th>
+            <th colspan="2">Text question</th>
             <th>Target SQL</th>
         </tr>
         <!-- <tr>
@@ -397,8 +398,8 @@ Audio samples are available at <a href="https://Wav2SQL.github.io/"><i>https://W
         </tr> -->
         <tr>
             <th></th>
-            <th>Spoken question</th>
-            <th>Text question</th>
+            <th colspan="2">Spoken question</th>
+            <th colspan="2">Text question</th>
             <th>Target SQL</th>
         </tr>
         <!-- <tr>
